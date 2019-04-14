@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        let ageChild = prompt('Вік дитини');
+        let kinderGarten = 4 - ageChild;
+        let school = kinderGarten + 2;
+        let schoolEnd = school + 11;
+        let uni = schoolEnd;
+        let uniEnd = uni + 5;
+    </script>
+        <h5>Дитячий Садок</h5>
+        <button id="one" type="button" onclick="document.getElementById('one').innerHTML = kinderGarten">Дитячий Садок</button>
+       
+        <h5>Школа</h5>
+        <button id="two" type="button" onclick="document.getElementById('two').innerHTML = school">Школа</button>
+        <h5>Випускний</h5>
+        <button id="three" type="button" onclick="document.getElementById('three').innerHTML = schoolEnd">Випускний</button>
+        <h5>Університет</h5>
+        <button id="four" type="button" onclick="document.getElementById('four').innerHTML = uni">Університет</button>
+        <h5>Випуск з університету</h5>
+        <button id="five" type="button" onclick="document.getElementById('five').innerHTML = uniEnd">Випускний з університету</button>
+    </body>
+</html>
