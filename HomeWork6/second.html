@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script defer>
+    
+        function f1() {
+            var num, out, prNum, tempOut;
+            prNum = Math.floor((Math.random() * 5) +1)
+            tempOut = document.getElementById('tempOut')
+            tempOut.innerHTML = prNum
+            num = document.getElementById('mynum').value;
+            out = document.getElementById('out')
+
+            if (num == prNum) {
+                out.innerHTML = 'Вы угадали'
+            }
+            else {
+                out.innerHTML = 'Вы ошиблись'
+            }
+            
+
+        }
+    </script>
+    </head>
+    <body>
+        <p>Введите число: <input type="text" id="mynum"> </p>
+        <button onclick="f1()">Угадать</button>
+        <hr>
+        <p id="out"></p>
+        <p id="tempOut"></p>
+    </body>
+</html>
