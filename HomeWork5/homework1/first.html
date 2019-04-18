@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            width: 200px;
+            height: 100px;
+            border: 2px black solid;
+            padding: 0%;
+            margin: 0%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px black solid;
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+
+    <table >
+        <tr>
+            <td>a + b</td>
+            <td id="sum"></td>
+        </tr>
+        <tr>
+            <td>a * b</td>
+            <td id="mul"></td>
+        </tr>
+        <tr>
+            <td>a / c</td>
+            <td id="div"></td>
+        </tr>
+    </table>
+    <script>
+        var a = parseInt(prompt("Введіть перше число"))
+        var b = parseInt(prompt("Введіть друге число"))
+        document.getElementById('sum').innerHTML = a + b
+        document.getElementById('mul').innerHTML = a * b
+        document.getElementById('div').innerHTML = a / b
+
+    </script>
+</body>
+</html>
