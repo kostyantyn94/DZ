@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pC = Math.floor(Math.random()*3 +1)
+        alert(pC)
+        var me = parseInt(prompt("Камінь - 1, Ножниці - 2, Бумага - 3"))
+        if (pC == me) 
+            alert("Нічья")
+        else if (pC == 1 && me == 2)
+            alert("Ви програли")
+        else if (pC == 2 && me == 3)
+            alert("Ви програли")
+        else if (pC == 3 && me == 1)
+            alert("Ви програли")
+        else if (me == 1 && pC == 2)
+            alert("Ви виграли")
+        else if ( me == 2 && pC == 3)
+            alert("Ви виграли")
+        else if ( me == 3 && pC == 1)
+            alert("Ви виграли")
+    </script>
+ 
+</body>
+</html>

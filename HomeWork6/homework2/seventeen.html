@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var choice = parseInt(prompt("Побутова техніка - 1, Інструменти - 2"))
+        
+        
+
+        if (choice = 1) {
+            alert("Ви зайшли в відділ побутової техніки. Що бажаєте придбати? 1 - телевізор, 2 - праска, 3 - планшет")
+            var tech = parseInt(prompt("Побутова техніка"))
+            switch (tech) {
+                case 1:
+                    alert("Ви обрали телевізор")
+                    break;
+                case 2: 
+                    alert("Ви обрали праску")
+                    break;
+                case 3:
+                    alert("Ви обрали планшет")
+                    break;
+                default:
+                    alert("Ви ввели невірне число. Введіть число від 1 до 3.")
+                    break;
+            }
+        }
+        else if (choice = 2) {
+            alert("Ви зайшли в відділ інструментів. Що бажаєте придбати? 1 - лопата, 2 - граблі, 3 - мітла, 4 -пила")
+            var inst = parseInt(prompt("Інструменти"))
+            switch (inst) {
+                case 1:
+                    alert("Ви обрали лопату")
+                    break;
+                case 2: 
+                    alert("Ви обрали граблі")
+                    break;
+                case 3:
+                    alert("Ви обрали мітлу")
+                    break;
+                case 4:
+                    alert("Ви обрали пилу")
+                    break;
+                default:
+                    alert("Ви ввели невірне число. Введіть число від 1 до 4.")
+                    break;
+            }
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fuel = parseInt(prompt("Кількість палива"))
+        var fuelGo = parseInt(prompt("Витрати палива на 100 км"))
+        var s = parseInt(prompt("Ввести відстань"))
+
+        if (fuel - (fuelGo / 100 * s) > 0)
+        document.write("Заправлятись не потрібно")
+        else
+        document.write("Вам не вистачить " + ((fuelGo / 100 * s) - fuel) + " літрів")
+
+    </script>
+</body>
+</html>

@@ -8,10 +8,14 @@
 </head>
 <body>
     <script>
-        let payment = prompt('Заробітня плата');
-        let min = prompt('Прожитковий мінімум');
-        let socHelp = min - payment;
-        alert(socHelp)
+        let a = parseInt(prompt("Введіть перше число"))
+        let b = parseInt(prompt("Введіть друге число"))
+        if (a>b) 
+            a = 0
+        else 
+            b = 0
+            document.write("a = " + a + " " + "b=" + b)
+        
     </script>
 </body>
 </html>

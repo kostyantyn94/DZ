@@ -8,10 +8,16 @@
 </head>
 <body>
     <script>
-        let payment = prompt('Заробітня плата');
-        let min = prompt('Прожитковий мінімум');
-        let socHelp = min - payment;
-        alert(socHelp)
+        var numberOne = Math.random();
+        var numberTwo = Math.random();
+        if (confirm("n 2>n 1") && numberTwo > numberOne)
+        {
+            alert("Wizard")
+        }
+        else {
+            alert("Looooooser");
+        }
+
     </script>
 </body>
 </html>

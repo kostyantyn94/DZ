@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cVova = parseInt(prompt("Кількість перших конфет"))
+        var lVova = parseInt(prompt("Кількість других  конфет"))
+        var bVova = parseInt(prompt("Кількість третіх конфет"))
+        var cDima = parseInt(prompt("Кількість перших конфет"))
+        var lDima = parseInt(prompt("Кількість других  конфет"))
+        var bDima = parseInt(prompt("Кількість третіх конфет"))
+        if (cVova > cDima && lVova > lDima && bVova > bDima) 
+        document.write("у однієї із дітей кожного типу цукерок більше")
+        else if (cVova < cDima && lVova < lDima && bVova < bDima)
+        document.write("у однієї із дітей кожного типу цукерок більше") 
+        else if (cVova > cDima && lVova > lDima || lVova > lDima && bVova > bDima || cVova > cDima && bVova > bDima)
+        document.write("у однієї із дітей двох типів цукерок більше;")
+        else if (cVova < cDima && lVova < lDima || lVova < lDima && bVova < bDima || cVova < cDima && bVova < bDima)
+        document.write("у однієї із дітей двох типів цукерок більше;")
+        else if (cVova + lVova + bVova == cDima + lDima + bDima)
+        document.write("кількість кожного з видів цукерок однакова.")
+        else
+        document.write("Інакше") 
+   
+    </script>
+</body>
+</html>

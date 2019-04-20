@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var pr = prompt("Ввести категорію")
+        switch (pr)
+        {
+           case 'A1': document.write("мопеди і триколісний транспорт. Обмеження за обсягом двигуна до 50 см³, або з потужністю до 4 кВт.");
+            break;
+            case 'A': document.write("мотоцикли (об’єм двигуна може перевищувати 50 см³, потужність — може перевищувати 4 кВт).");
+            break;
+            case 'B': document.write("легкові авто. Обмеження по масі — до 3,5 тонн, за кількістю пасажирських сидінь — до 8.");
+            break;
+            case 'C1':document.write("вантажні авто. Обмеження по масі — від 3.5 до 7.5 тонн.");
+            break;
+            case 'C': document.write("вантажні авто масою понад 7.5 тонн.");
+            break;
+            case 'D1': document.write("автобуси з кількістю пасажирських сидінь до 16.");
+            break;
+            case 'D': document.write("автобуси, кількість пасажирських сидінь може перевищувати 16.");
+            break;
+            case 'T': document.write("трамваї."); 
+            break;     
+            default: document.write("error");
+            break;
+        }
+    </script>
+    </body>
+</html>
