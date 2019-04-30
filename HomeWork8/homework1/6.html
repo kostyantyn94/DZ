@@ -8,13 +8,15 @@
 </head>
 <body>
     <script>
-        let symbol = prompt("Input symbol").toUpperCase()
-        if (symbol >= "A" && symbol <= "Z")
-            document.write("Letter")
-        else if (symbol >= "0" && symbol <= "9")
-            document.write("Digit")
-        else
-            document.write("Other")
+        var sum = 1
+        for (let i = 1; i <= 9; i++) {
+            document.write(i + "." + " " + sum)
+            document.write("<br>")
+            sum = sum * 10 + i + 1
+           
+        }
+        
+        
     </script>
 </body>
 </html>
