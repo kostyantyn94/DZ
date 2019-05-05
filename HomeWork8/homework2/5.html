@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let e = 0
+        let o = 12
+        for (let i = 0; i < 12; i++) {
+            for (let j = 0; j < e; j++) {
+                document.write("_") // Поставив нижню лінію так як пробіли ігноруються
+                
+            }
+            for (let k = 0; k < o; k++) {
+                document.write("o") 
+                
+            }
+            o--
+            e++
+            document.write("<br>")
+        }
+    </script>
 </body>
 </html>

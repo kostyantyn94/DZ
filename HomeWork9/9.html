@@ -7,17 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
-        
-        for (let i = 0; i < 3; i++) {
-            var a = "o"
-            for (let j = 0; j < 5; j++) {
-                document.write(a + "<br>")
-                a = a + "o"
-            }
+        var N = parseInt(prompt("Введіть ширину множини чисел"))
+        var n = 0
+        var x = parseInt(prompt(`Загадайте число від 0 до ${N}`))
+        while (n!=x) {
+            n = 1 + Math.log2(x)
             
         }
+        alert(n, x)
     </script>
 </body>
 </html>

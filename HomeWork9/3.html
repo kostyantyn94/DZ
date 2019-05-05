@@ -7,17 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
+        var a = ''
+        var b = a
         
-        for (let i = 0; i < 3; i++) {
-            var a = "o"
-            for (let j = 0; j < 5; j++) {
-                document.write(a + "<br>")
-                a = a + "o"
-            }
-            
+        while (a!="a") {
+            a = prompt("Введіть символ")
+            b = a + b
         }
+        document.write(b)
     </script>
 </body>
 </html>

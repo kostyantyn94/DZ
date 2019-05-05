@@ -7,16 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
-        
-        for (let i = 0; i < 3; i++) {
-            var a = "o"
-            for (let j = 0; j < 5; j++) {
-                document.write(a + "<br>")
-                a = a + "o"
-            }
-            
+        var sum = parseInt(prompt("Початкове значення сумми"))
+        while (sum!=100) {
+            var a = parseInt(prompt("Введіть число"))
+            sum += a
         }
     </script>
 </body>

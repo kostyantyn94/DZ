@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
-        
-        for (let i = 0; i < 3; i++) {
-            var a = "o"
-            for (let j = 0; j < 5; j++) {
-                document.write(a + "<br>")
-                a = a + "o"
+        var h1 = 1
+        for (let i = 1; i <= 6; i++) {
+            document.write(`${i}.`)
+            for (let j = 1; j <= h*h; j++) {
+                document.write(j+'')
             }
-            
+            h++
+            document.write("<br>")
         }
+
     </script>
 </body>
 </html>

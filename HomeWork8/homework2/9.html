@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // Користувач вводить сумму вкладених грошей
+         var s = parseInt(prompt("Введіть суму грошей"))
+        var a // Змінна для позначення зросту сумми за один рік
+        var b = 0
+        for (let i = 0; i < 20; i++) {
+            a = s*0.2 // Зріст за один рік
+            b = b + a // Сумарний відсоток
+
+        }
+        var new_s = b + s // Сумма після першого депозиту
+        var new_a // Змінна для позначення зросту сумми за один рік
+        var new_b = 0 // 
+        for (let j = 0; j < 17; j++) {
+            new_a = new_s * 0.27
+            new_b = new_b + new_a
+        }
+        document.write(`Ви отримаєте ${new_b+new_s} грн через 20 років.`)
+    </script>
+</body>
+</html>
