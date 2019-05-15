@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      function exams(note1, note2, note3, note4, note5) {
+        if (note1 == 3)
+        document.write("Оцінка за перший предмет 3 <br>")
+        if (note2 == 3)
+        document.write("Оцінка за другий предмет 3 <br>")
+        if (note3 == 3)
+        document.write("Оцінка за третій предмет 3 <br>")
+        if (note4 == 3)
+        document.write("Оцінка за четвертий предмет 3 <br>")
+        if (note5 == 3)
+        document.write("Оцінка за пятий предмет 3 <br>")
+
+      }
+      
+      var firstExam = parseInt(prompt("Введіть оцінку за перший предмет"))
+      var secondExam = parseInt(prompt("Введіть оцінку за другий предмет"))
+      var thirdExam = parseInt(prompt("Введіть оцінку за третій предмет"))
+      var fourthExam = parseInt(prompt("Введіть оцінку за четвертий предмет"))
+      var fifthExam = parseInt(prompt("Введіть оцінку за пятий предмет"))
+      
+      var a = exams(fifthExam, secondExam, thirdExam, fourthExam, fifthExam)
+      document.write(a)
+    </script>
+  </body>
+</html>

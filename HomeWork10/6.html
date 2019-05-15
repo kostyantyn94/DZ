@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function smInInc(sm) {
+            return sm*0.393701
+        }
+        function kgInPound(kg) {
+            return kg * 2.20462
+        }
+        function kmInMiles(km) {
+            return km * 0.621371
+        }
+        var x = parseFloat(prompt("Введіть кількість сантиметрів"))
+        var y = parseFloat(prompt("Введіть кількість кілограм"))
+        var z = parseFloat(prompt("Введіть кількість кілометрів"))
+        document.write(`
+        ${x} сантиметрів = ${smInInc(x)} дюймів, 
+        ${y} кілограм = ${kgInPound(y)} фунтів, 
+        ${z} кілометрів = ${kmInMiles(z)} миль, 
+        `)
+    </script>
+</body>
+</html>
